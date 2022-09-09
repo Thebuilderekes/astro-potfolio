@@ -1,0 +1,33 @@
+---
+import '../css/myworks.css'
+const workCards = [
+
+{
+    imgUrl: '/src/assets/img/pencil-300.jpg',
+    text: "this is about project  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+},
+
+{
+    imgUrl: '/src/assets/img/pencil-300.jpg',
+    text: "this is about project lorem commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+},
+
+{
+    imgUrl: '/src/assets/img/pencil-300.jpg',
+    text: "this is about project commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+}
+
+]
+---
+
+<section class="works">
+        <h2>My works</h2>
+        <div class="card-container">
+            {workCards.map(WorkCard =><div class="card">
+            <figure>
+                <img src={WorkCard.imgUrl} alt="portfolio card"/>
+          </figure>
+            <p>{WorkCard.text}</p>
+            </div>)}
+        </div>
+</section>
